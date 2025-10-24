@@ -3,7 +3,6 @@ package onetoonebidierctional;
 import java.util.Scanner;
 
 public class MobileSimUi {
-
 	public static void main(String[] args) {
 		MobileSimDao dao=new MobileSimDao();
 		boolean key=true;
@@ -75,6 +74,10 @@ public class MobileSimUi {
 					case 1:
 					{
 						boolean key4=true;
+						while(key4)
+						{
+							
+						}
 						
 						
 					}
