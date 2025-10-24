@@ -70,7 +70,7 @@ public class EmployeeDriver {
 				boolean flag2=true;
 				while(flag2)
 				{
-					System.out.println("enter the which data u want to update \n 2.name\n 3.salary\n 4.phone\n 5.address\n 6.main menu");
+					System.out.println("enter the which data u want to update \n   2.name\n 3.salary\n 4.phone\n 5.address\n 6.main menu");
 					switch (sc.nextInt())
 					{
 					
