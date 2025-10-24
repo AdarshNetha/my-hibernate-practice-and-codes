@@ -1,4 +1,4 @@
-package company;
+package company_curd_operations;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
