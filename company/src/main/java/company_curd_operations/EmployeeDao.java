@@ -63,17 +63,7 @@ public class EmployeeDao {
 			System.out.println(emplist);
 		}
 
-		public void updateId(int oldId, int newId) {
-			emp=entityManager.find(Employee.class, oldId);
-			if(emp!=null)
-			{
-				entityTransaction.begin();
-				emp.setId(newId);
-				entityManager.merge(emp);
-				entityTransaction.commit();
-			}
-			
-		}
+
 
 		public void updateSalary(int id, double salary) {
 			emp=entityManager.find(Employee.class, id);

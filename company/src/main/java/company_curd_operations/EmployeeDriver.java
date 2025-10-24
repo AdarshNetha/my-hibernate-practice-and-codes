@@ -70,19 +70,10 @@ public class EmployeeDriver {
 				boolean flag2=true;
 				while(flag2)
 				{
-					System.out.println("enter the which data u want to update 1.id\n 2.name\n 3.salary\n 4.phone\n 5.address\n 6.main menu");
+					System.out.println("enter the which data u want to update \n 2.name\n 3.salary\n 4.phone\n 5.address\n 6.main menu");
 					switch (sc.nextInt())
 					{
-					case 1:
-					{
-						System.out.println("enter the old id of user to update");
-						int oldId=sc.nextInt();
-						System.out.println("enter the new id");
-						int newId=sc.nextInt();
-						employeeDao.updateId(oldId,newId);
-					}
-						
-						break;
+					
 					case 2:
 					{
 						System.out.println("enter the id");
