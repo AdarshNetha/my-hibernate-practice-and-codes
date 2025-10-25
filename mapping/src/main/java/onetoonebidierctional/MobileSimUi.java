@@ -37,7 +37,7 @@ public class MobileSimUi {
 			{
 				boolean key2=true;
 				while(key2) {
-				System.out.println("choose 1.find mobile along with sim detials \n 2.find sim along with mobile \n 3.main menu");
+				System.out.println("choose 1.find mobile along with sim detials \n 2.find sim along with mobile \n 3.find all sim and mobile data \n 4.main menu");
 				switch (sc.nextInt()) {
 				case 1:
 				{
@@ -52,6 +52,11 @@ public class MobileSimUi {
 				}
 				break;
 				case 3:
+				{
+					dao.findAll();
+				}
+				break;
+				case 4:
 				{
 					key2=false;
 				}

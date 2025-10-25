@@ -1,5 +1,7 @@
 package onetoonebidierctional;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -50,6 +52,16 @@ public class MobileSimDao {
 
 	public void upadtePhoneNumberById(int id, long phnumber) {
 		SimCard s=em.find(SimCard.class, id);
+		
+	}
+
+	public void findAll() {
+		String query1="select m from Mobile m";
+		String query2="select s from SimCard s";
+		List<Mobile>Mobilelist=em.createQuery(query1).getResultList();
+		List<SimCard>Simlist=em.createQuery(query2).getResultList();
+		System.out.println(Mobilelist);
+		System.out.println(Simlist);
 		
 	}
 
