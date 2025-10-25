@@ -32,4 +32,12 @@ public class MobileSimDao {
 		System.out.println(s.getM());	
 	}
 
+	public void upadteMobileBrandById(int id, String brand) {
+		Mobile m=em.find(Mobile.class, id);
+		m.setModel(brand);
+		et.begin();
+		em.merge(m);
+		et.commit();		
+	}
+
 }

@@ -58,6 +58,7 @@ public class MobileSimUi {
 				break;
 
 				default:
+					System.out.println("invalid input");
 					break;
 				}
 				}
@@ -75,8 +76,28 @@ public class MobileSimUi {
 					{
 						boolean key4=true;
 						while(key4)
-						{
+						{ System.out.println("wha tyou want to update 1.update mobile brand \n 2.previous menu");
+							switch(sc.nextInt())
+							{
+								case 1:
+								{
+									System.out.println("enter the id");
+									int id=sc.nextInt();
+									System.out.println("enter the new brand");
+									String brand=sc.next();
+									dao.upadteMobileBrandById(id,brand);
+								}
+								break;
+								case 2:
+								{
+									key=false;
+								}
+								break;
+								default:
+									System.out.println("invalid input");
+									break;
 							
+							}
 						}
 						
 						
