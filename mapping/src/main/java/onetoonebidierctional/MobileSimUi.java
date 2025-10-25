@@ -76,7 +76,7 @@ public class MobileSimUi {
 					{
 						boolean key4=true;
 						while(key4)
-						{ System.out.println("wha tyou want to update 1.update mobile brand \n 2.previous menu");
+						{ System.out.println("what you want to update 1.update mobile brand \n 2.previous menu");
 							switch(sc.nextInt())
 							{
 								case 1:
@@ -98,13 +98,46 @@ public class MobileSimUi {
 									break;
 							
 							}
-						}
-						
-						
+						}						
 					}
-						
 						break;
-
+					case 2:
+					{
+						boolean key4=true;
+						while(key4)
+						{ System.out.println("what you want to update 1.update sim provider name \n  2.phone number \n 3.previous menu");
+							switch(sc.nextInt())
+							{
+								case 1:
+								{
+									System.out.println("enter the id");
+									int id=sc.nextInt();
+									System.out.println("enter the new sim provider name");
+									String provider=sc.next();
+									dao.upadteSimProvierById(id,provider);
+								}
+								break;
+								case 2:
+								{
+									System.out.println("enter the id");
+									int id=sc.nextInt();
+									System.out.println("enter the new phone number");
+									long phnumber=sc.nextLong();
+									dao.upadtePhoneNumberById(id,phnumber);
+								}
+								case 3:
+								{
+									key=false;
+								}
+								break;
+								default:
+									System.out.println("invalid input");
+									break;
+							
+							}
+						}			
+					}
+					break;
 					default:
 						break;
 					}

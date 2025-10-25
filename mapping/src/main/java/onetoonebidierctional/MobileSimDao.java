@@ -26,8 +26,8 @@ public class MobileSimDao {
 		System.out.println(m.getSim());
 	}
 
-	public void findBySimId(int nextInt) {
-		SimCard s=em.find(SimCard.class, nextInt);
+	public void findBySimId(int id) {
+		SimCard s=em.find(SimCard.class, id);
 		System.out.println(s);
 		System.out.println(s.getM());	
 	}
@@ -38,6 +38,19 @@ public class MobileSimDao {
 		et.begin();
 		em.merge(m);
 		et.commit();		
+	}
+
+	public void upadteSimProvierById(int id, String provider) {
+		SimCard s=em.find(SimCard.class, id);
+		s.setProvider(provider);
+		et.begin();
+		em.merge(s);
+		et.commit();
+	}
+
+	public void upadtePhoneNumberById(int id, long phnumber) {
+		SimCard s=em.find(SimCard.class, id);
+		
 	}
 
 }
