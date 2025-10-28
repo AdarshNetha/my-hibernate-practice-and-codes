@@ -1,4 +1,4 @@
-package onetooneunidirectional;
+package one_to_one_unidirectional_curd_oprtations;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
