@@ -17,7 +17,6 @@ public class Insert {
 		Person person=new Person(201,"adarsh",23,addar);
 		
 		et.begin();
-		em.persist(addar);
 		em.persist(person);
 		et.commit();
 	}

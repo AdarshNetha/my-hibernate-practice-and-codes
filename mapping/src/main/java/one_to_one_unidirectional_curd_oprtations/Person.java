@@ -1,5 +1,6 @@
 package one_to_one_unidirectional_curd_oprtations;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -10,7 +11,7 @@ public class Person {
 	private int id;
 	private String name;
 	private int age;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private Addar addar;
 	public Person(int id, String name, int age, Addar addar) {
 		super();

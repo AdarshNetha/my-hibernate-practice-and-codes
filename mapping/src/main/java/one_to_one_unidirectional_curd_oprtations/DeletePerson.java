@@ -13,7 +13,7 @@ public class DeletePerson {
 		EntityTransaction et=em.getTransaction();
 		
 		et.begin();
-		Person p=em.find(Person.class, 101);
+		Person p=em.find(Person.class, 201);
 		if(p!=null)
 		{
 			em.remove(p);
