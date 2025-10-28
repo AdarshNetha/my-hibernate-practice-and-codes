@@ -1,5 +1,12 @@
 package many_to_many_bidirectional;
 
-public class Movie {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Movie {
+	@Id
+	private int id;
+	private String name;
+	private 
 }
