@@ -1,5 +1,6 @@
 package onetoonebidierctional;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -10,7 +11,7 @@ public class Driver {
 	private int id;
 	private String name;
 	private int age;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private Licence l;
 	public int getId() {
 		return id;
