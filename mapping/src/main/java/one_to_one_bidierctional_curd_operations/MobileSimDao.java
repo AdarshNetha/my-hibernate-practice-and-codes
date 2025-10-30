@@ -1,4 +1,4 @@
-package onetoonebidierctional;
+package one_to_one_bidierctional_curd_operations;
 
 import java.util.List;
 
